@@ -287,13 +287,10 @@ class EmbarqueController extends Controller
         $comentarios = Comentario::join('Actividadembarques', 'Actividadembarques.id', '=', 'comentarios.Id_Actividad')->join('embarques', 'embarques.id', '=', 'Id_Embarque')->select('comentarios.*')->where('embarques.id', $embarque)->paginate();
 
 
-
-
         $dompdf = new Dompdf();
         $options = $dompdf->getOptions();
         $options->setDefaultFont('Verdana');
         $dompdf->setOptions($options);
-
 
 
         $pdf = PDF::setOptions([
