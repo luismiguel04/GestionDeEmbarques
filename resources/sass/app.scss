@@ -1,0 +1,35 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+$body-bg: #ffffff;
+
+$color1: #7600a9;
+$color2: #8a16bd;
+$color3: #a80083;
+$color4: #be1a95;
+$color5: #2700b3;
+$gray-600: #6c757d;
+$purple: #6f42c1;
+$yellow: #ffc107;
+$luis: #ff66FF;
+
+$primary: $color5;
+$secondary: $gray-600;
+$success: $color1;
+$info: $purple;
+$warning: $yellow;
+$danger: $color3;
+
+$dropdown-link-color: $purple;
+$dropdown-link-hover-color: $luis;
+
+
+
+$navbar-light-active-color: $luis;
+$navbar-light-color: $purple;
+$navbar-light-hover-color: $luis;
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
