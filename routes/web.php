@@ -36,6 +36,8 @@ Route::middleware([
     })->name('index');
 });
 
+
+
 Auth::routes();
 
 
